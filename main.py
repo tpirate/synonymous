@@ -24,7 +24,8 @@ def main():
             f.write(word_list[index] + ' ')
             index += 1
             r = requests.get('https://www.thesaurus.com/browse/' + word)
-            result = re.findall('(?<=data-linkid="nn1ov4" class="css-1(n6g4vv|kg1yv8) eh475bn0">)(.*?)(?=<)', r.text)
+            result = re.findall('(?<=data-linkid="nn1ov4" class="css-1(n6g4vv|kg1yv8|gyuw4i) eh475bn0">)(.*?)(?=<)', r.text)
+            print(word)
             print('synonyms:')
             for s in result:
                 print(s[1])
