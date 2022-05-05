@@ -6,9 +6,7 @@
 # Total wasted hours: 8
 
 import keyboard
-import time
 import requests
-import html
 import re
 
 def main():
